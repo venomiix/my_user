@@ -1,0 +1,154 @@
+@import 'variables';
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: $font-stack;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: $background-color;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0.25rem 0;
+  }
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.error {
+  color: $danger-color;
+  background: #ffe6e6;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .sort-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .add-user-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .add-user-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .user-form {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .user-form div {
+    margin-bottom: 0.75rem;
+  }
+  
+  .user-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .user-form input {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-form .buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .user-form button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-form button[type="submit"] {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .user-form button[type="submit"]:hover {
+    background-color: #1976d2;
+  }
+  
+  .user-form button[type="button"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .user-form button[type="button"]:hover {
+    background-color: #d32f2f;
+  }
+  
+  .edit-btn {
+    margin-top: 1rem;
+    background-color: #7700ff;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e68a00;
+  }
+ 
